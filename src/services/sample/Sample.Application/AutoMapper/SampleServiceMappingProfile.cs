@@ -15,7 +15,7 @@ namespace Sample.Application.AutoMapper
 
         private void RegisterMappings()
         {
-            CreateMap<CreateTodoItemCommand, TodoItem>().ForMember(destination => destination.Id, options => options.MapFrom(x => Guid.NewGuid()));
+            CreateMap<CreateTodoItemCommand, TodoItem>();
             CreateMap<TodoItem, CreateTodoItemCommandResult>();
 
             CreateMap<CompleteTodoItemCommand, TodoItem>();

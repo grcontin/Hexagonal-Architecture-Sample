@@ -6,7 +6,7 @@
 
         protected Entity()
         {
-            Id = new Guid();
+            Id = Guid.NewGuid();
         }
     }
 }
